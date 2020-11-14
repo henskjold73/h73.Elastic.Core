@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
 namespace h73.Elastic.Core.Search.Results
 {
@@ -7,7 +6,7 @@ namespace h73.Elastic.Core.Search.Results
     {
         [JsonProperty("doc_count", NullValueHandling = NullValueHandling.Ignore,
             DefaultValueHandling = DefaultValueHandling.Include)]
-        public int? DocCount { get; set; }
+        public new int? DocCount { get; set; }
 
         [JsonProperty("value", NullValueHandling = NullValueHandling.Ignore,
             DefaultValueHandling = DefaultValueHandling.Include)]

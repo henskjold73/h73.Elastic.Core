@@ -57,7 +57,7 @@ namespace h73.Elastic.Core.Json
 
                 return JsonConvert.DeserializeObject($"{{{jsonString}}}", genericType);
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 return null;
             }
